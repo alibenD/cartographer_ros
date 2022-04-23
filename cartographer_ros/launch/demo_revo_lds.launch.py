@@ -75,7 +75,7 @@ def generate_launch_description():
     )
 
     ros2_bag_play_cmd = ExecuteProcess(
-        cmd = ['ros2', 'bag', 'play', LaunchConfiguration('bag_filename'), '--clock'],
+        cmd = ['ros2', 'bag', 'play', LaunchConfiguration('bag_filename'), '-s rosbag_v2'],
         name = 'rosbag_play',
     )
 
